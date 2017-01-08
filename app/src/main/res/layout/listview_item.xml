@@ -1,0 +1,58 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:orientation="vertical" android:layout_width="match_parent"
+    android:layout_height="match_parent">
+
+    <TextView
+        android:id="@+id/myName"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginLeft="23dp"
+        android:text="사용자 이름"
+        android:textStyle="bold"
+        android:textSize="20sp"
+        android:layout_marginStart="23dp"
+        android:layout_toRightOf="@+id/myProfile"
+        android:layout_toEndOf="@+id/myProfile"
+        android:layout_marginTop="19dp" />
+
+    <ImageView
+        android:id="@+id/myProfile"
+        android:layout_marginLeft="10dp"
+        android:layout_width="65dp"
+        android:layout_height="65dp"
+        android:src="@drawable/profile"
+        android:layout_alignParentTop="true"
+        android:layout_alignParentStart="true"
+        android:layout_marginStart="37dp" />
+
+
+
+    <ImageView
+        android:id="@+id/state_bg"
+        android:layout_width="122.67dp"
+        android:layout_height="56.33dp"
+        android:src="@drawable/state_bg"
+        android:layout_alignTop="@+id/myProfile"
+        android:layout_alignParentRight="true"
+        android:layout_alignParentEnd="true"
+        android:layout_marginRight="11dp"
+        android:layout_marginEnd="11dp"/>
+
+
+    <TextView
+        android:id="@+id/myStateMsg"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="상태메세지"
+        android:textStyle="bold"
+        android:textSize="10sp"
+        android:layout_alignBaseline="@+id/myName"
+        android:layout_alignBottom="@+id/myName"
+        android:layout_alignRight="@+id/state_bg"
+        android:layout_alignEnd="@+id/state_bg"
+        android:layout_marginRight="38dp"
+        android:layout_marginEnd="38dp"/>
+
+
+</RelativeLayout>
